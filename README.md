@@ -25,7 +25,7 @@ A fully static portfolio website built with pure HTML, CSS, and JavaScript. No b
 
 All website content is managed in `data/site-config.json`:
 
-```json
+\`\`\`json
 {
   "personal": {
     "name": "Your Name",
@@ -55,7 +55,7 @@ All website content is managed in `data/site-config.json`:
   "techStack": {...},
   "certifications": {...}
 }
-```
+\`\`\`
 
 ### Setup Contact Form (Optional)
 
@@ -64,12 +64,12 @@ The contact form works in two modes:
 1. **With Web3Forms** (Recommended): 
    - Sign up for free at [web3forms.com](https://web3forms.com)
    - Add your access key to `data/site-config.json`:
-     ```json
+     \`\`\`json
      "contact": {
        "email": "your.email@example.com",
        "web3formsKey": "your-access-key-here"
      }
-     ```
+     \`\`\`
 
 2. **Mailto Fallback**: If no Web3Forms key is configured, the form will open the user's email client
 
@@ -91,14 +91,14 @@ Replace `public/resume.pdf` with your resume file, or update the path in `site-c
 
 ### Method 2: Using Git
 
-```bash
+\`\`\`bash
 git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
 git remote add origin https://github.com/yourusername/repo-name.git
 git push -u origin main
-```
+\`\`\`
 
 Then enable GitHub Pages in repository settings as described above.
 
@@ -108,7 +108,7 @@ Simply open `index.html` in your browser. No build process or server needed!
 
 For a local server (optional):
 
-```bash
+\`\`\`bash
 # Using Python
 python -m http.server 8000
 
@@ -117,13 +117,13 @@ npx serve
 
 # Using PHP
 php -S localhost:8000
-```
+\`\`\`
 
 Then open `http://localhost:8000`
 
 ## File Structure
 
-```
+\`\`\`
 ├── data/
 │   └── site-config.json      # All website content (EDIT THIS)
 ├── public/
@@ -134,7 +134,7 @@ Then open `http://localhost:8000`
 ├── contact.html              # Contact page
 ├── styles.css                # All styles
 └── app.js                    # JavaScript utilities
-```
+\`\`\`
 
 ## Updating Content
 
@@ -156,24 +156,24 @@ Works on all modern browsers:
 
 Edit CSS variables in `styles.css`:
 
-```css
+\`\`\`css
 :root {
   --primary: #135bec;
   --background: #0a0e1a;
   --surface: #141824;
   /* ... more colors */
 }
-```
+\`\`\`
 
 ### Fonts
 
 Change fonts in HTML `<head>` sections and update `styles.css`:
 
-```css
+\`\`\`css
 body {
   font-family: "Your Font", sans-serif;
 }
-```
+\`\`\`
 
 ## Troubleshooting
 
